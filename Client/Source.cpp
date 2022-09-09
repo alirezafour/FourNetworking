@@ -3,6 +3,6 @@
 
 int main(int argc, char* argv[])
 {
-	std::cout << "Hello Client!. enum is : "<< static_cast<int>(four::net::testEnum::enum1) << "\n";
+	std::cout << "Hello from Client!.\n";
 	return 0;
 }

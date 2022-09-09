@@ -1,7 +1,11 @@
-﻿#include <iostream>
+﻿#include "FourNetworking/FourNetworking.h"
 
-int main()
-{
-	std::cout << "Hello test.\n";
-	return 0;
+#include <boost/lambda/lambda.hpp>
+#include <iostream>
+#include <iterator>
+#include <algorithm>
+
+
+namespace four::net {
+
 }
