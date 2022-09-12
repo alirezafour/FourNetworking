@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 20)
 
 include_directories("src")
 
-file(GLOB SOURCES Source.cpp src/* src/*/* src/*/*)
+file(GLOB SOURCES server.cpp src/* src/*/* src/*/*)
 
 # Add source to this project's executable.
 add_executable (${PROJECT_NAME} ${SOURCES})
