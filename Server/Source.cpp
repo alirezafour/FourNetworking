@@ -4,9 +4,10 @@
 int main(int argc, char* argv[])
 {
 	try {
+		
 		boost::asio::io_context io_context;
 
-		boost::asio::ip::tcp::acceptor acceptor(io_context, boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), 1337));
+		boost::asio::ip::tcp::acceptor acceptor(io_context, boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), 6000));
 
 		while (true)
 		{

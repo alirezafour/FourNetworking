@@ -11,7 +11,7 @@ include_directories("src")
 file(GLOB SOURCES Source.cpp src/* src/*/* src/*/*)
 
 # Add source to this project's executable.
-add_executable (${PROJECT_NAME} ${SOURCES})
+add_executable (${PROJECT_NAME} ${SOURCES} "client.cpp")
 
 target_include_directories(${PROJECT_NAME} PUBLIC FourNetworking)
 
