@@ -69,8 +69,9 @@ public:
 		{
 			while (socket_.is_open())
 			{
-				std::string message { "Hello my dear server. "};
-				//std::cin >> message;
+				std::string message { "Hello my dear server. \n"};
+				std::getline(std::cin, message);
+				message += "\n";
 				co_await boost::asio::async_write(socket_,
 					boost::asio::buffer(message), use_awaitable);
 			}
@@ -129,9 +130,7 @@ int main(int argc, char* argv[])
 		boost::asio::io_context io_context(1);
 		std::shared_ptr<client_chat> client = std::make_shared<client_chat>(io_context);
 		client->connect("127.0.0.1", "6000");
-
 		io_context.run();
-
 
 // 		while (true)
 // 		{
